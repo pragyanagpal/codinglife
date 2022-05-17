@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Survey Form</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			background-image: url(blogger.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			width: 100%;
+		}
+		form{
+			color: #fff;
+			width: 60%;
+			margin: 30px auto;
+			background-color: rgba(0, 0, 0, 0.7);
+			border-radius: 8px;
+		}
+		form h1{
+			text-align: center;
+			padding-top: 45px;
+		}
+		.details{
+			padding: 55px 55px 0px 55px;
+			font-size: 20px;
+		}
+		.details input{
+			width: 274px;
+			height: 15px;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1.5px solid grey;
+		}
+		.align{
+			margin-left: 50px;
+		}
+		.alignment{
+			float: right;
+			position: absolute;
+			left: 50%;
+			top: 52%;
+		}
+		#date{
+			float: right;
+			position: absolute;
+			left: 50%;
+			top: 46%;
+		}
+		.heading p{
+			font-size: 24px;
+		}
+		.heading span{
+			margin: 0px;
+			padding: 0px;
+			width: auto;
+		}
+		.heading table{
+			border-collapse: collapse;
+			empty-cells: hide;
+			color: black;
+		}
+		.heading tr label{
+			width: 100%;
+			margin: 0px;
+			display: inline-block;
+		}
+		.heading table th,td{
+			padding: 11px;
+			margin-left: -90px;
+			column-width: 90px;
+			font-size: 15px;
+			/*width: auto;*/
+			text-align: center;
+			border: 1px solid white;
+		}
+		.heading table tr th{
+			background-color: white;
+		}
+		.heading span{
+			margin-left: -95px;
+		}
+		.heading .radiobtbn{
+			margin-left: -25px;
+		}
+
+	</style>
+</head>
+<body>
+	<form>
+		<h1>Employee Satisfaction Survey</h1>
+		<hr>
+		<div class="details">
+			<label>Name</label> <br><br>
+			<input type="text" placeholder="First name">
+			<input type="text" placeholder="Last name" class="align"> <br> <br><br>
+			<label>Email</label><br><br>
+			<input type="email" name="email" placeholder="Enter your Email">
+			<div class="dates">
+			<label id="date">Date</label><br><br>
+			<input type="date" name="date" class="alignment"> 
+		</div>
+		<div class="heading">
+			<p>How would you describe your overall level of job satisfaction?</p><br>
+			<input type="radio" name="size"><span>Very Satisfied</span><br>
+			<input type="radio" name="size"><span>Somewhat Satisfied</span><br>
+			<input type="radio" name="size"><span>Neutral</span><br>
+			<input type="radio" name="size"><span>Somewhat Dissatisfied</span><br>
+			<input type="radio" name="size"><span>Very Dissatisfied</span><br><br><br>
+			<p>How would you rate the following?</p><br>
+			<table>
+				<tbody>
+					<tr>
+					<th></th>
+					<th>Excellent</th>
+					<th>Good</th>
+					<th>Average</th>
+					<th>Poor</th>
+					<th>Very Poor</th>
+				</tr>
+				<tr>
+					<label><th>Salary</th></label>
+					<td><input type="radio" name="salary" class="radiobtn"></td>
+					<td><input type="radio" name="salary" class="radiobtn"></td>
+					<td><input type="radio" name="salary"class="radiobtn"></td>
+					<td><input type="radio" name="salary"class="radiobtn"></td>
+					<td><input type="radio" name="salary"class="radiobtn"></td>
+				</tr>
+				<tr>
+					<label><th>Overall benefits</th></label>
+					<td><input type="radio" name="benifits"class="radiobtn"></td>
+					<td><input type="radio" name="benifits"class="radiobtn"></td>
+					<td><input type="radio" name="benifits"class="radiobtn"></td>
+					<td><input type="radio" name="benifits"class="radiobtn"></td>
+					<td><input type="radio" name="benifits"class="radiobtn"></td>
+				</tr>
+				<tr>
+					<label><th>Health benefits</th></label>
+					<td><input type="radio" name="health"class="radiobtn"></td>
+					<td><input type="radio" name="health"class="radiobtn"></td>
+					<td><input type="radio" name="health"class="radiobtn"></td>
+					<td><input type="radio" name="health"class="radiobtn"></td>
+					<td><input type="radio" name="health"class="radiobtn"></td>
+				</tr>
+				<tr>
+					<label><th>Physical Work Environment</th></label>
+					<td><input type="radio" name="physical"class="radiobtn"></td>
+					<td><input type="radio" name="physical"class="radiobtn"></td>
+					<td><input type="radio" name="physical"class="radiobtn"></td>
+					<td><input type="radio" name="physical"class="radiobtn"></td>
+					<td><input type="radio" name="physical"class="radiobtn"></td>
+				</tr>
+				<tr>
+					<label><th>Senior Leadership</th></label>
+					<td><input type="radio" name="Leadership"class="radiobtn"></td>
+					<td><input type="radio" name="Leadership"class="radiobtn"></td>
+					<td><input type="radio" name="Leadership"class="radiobtn"></td>
+					<td><input type="radio" name="Leadership"class="radiobtn"></td>
+					<td><input type="radio" name="Leadership"class="radiobtn"></td>
+				</tr>
+				<tr>
+					<label><th>Indiviual Management</th></label>
+					<td><input type="radio" name="Management"class="radiobtn"></td>
+					<td><input type="radio" name="Management"class="radiobtn"></td>
+					<td><input type="radio" name="Management"class="radiobtn"></td>
+					<td><input type="radio" name="Management"class="radiobtn"></td>
+					<td><input type="radio" name="Management"class="radiobtn"></td>
+				</tr>
+				<tr>
+					<label><th>Performance Feedback</th></label>
+					<td><input type="radio" name="Feedback"class="radiobtn"></td>
+					<td><input type="radio" name="Feedback"class="radiobtn"></td>
+					<td><input type="radio" name="Feedback"class="radiobtn"></td>
+					<td><input type="radio" name="Feedback"class="radiobtn"></td>
+					<td><input type="radio" name="Feedback"class="radiobtn"></td>
+				</tr>
+				<tr>
+					<label><th>Employee Evaluations</th></label>
+					<td><input type="radio" name="Evaluations"class="radiobtn"></td>
+					<td><input type="radio" name="Evaluations"class="radiobtn"></td>
+					<td><input type="radio" name="Evaluations"class="radiobtn"></td>
+					<td><input type="radio" name="Evaluations"class="radiobtn"></td>
+					<td><input type="radio" name="Evaluations"class="radiobtn"></td>
+				</tr>
+				<tr>
+					<label><th>Recognition</th></label>
+					<td><input type="radio" name="Recognition"class="radiobtn"></td>
+					<td><input type="radio" name="Recognition"class="radiobtn"></td>
+					<td><input type="radio" name="Recognition"class="radiobtn"></td>
+					<td><input type="radio" name="Recognition"class="radiobtn"></td>
+					<td><input type="radio" name="Recognition"class="radiobtn"></td>
+				</tr>
+				<tr>
+					<label><th>Training opportunities</th></label>
+					<td><input type="radio" name="opportunities"class="radiobtn"></td>
+					<td><input type="radio" name="opportunities"class="radiobtn"></td>
+					<td><input type="radio" name="opportunities"class="radiobtn"></td>
+					<td><input type="radio" name="opportunities"class="radiobtn"></td>
+					<td><input type="radio" name="opportunities"class="radiobtn"></td>
+				</tr>
+				<tr>
+					<label><th>Opportunities for advancement</th></label>
+					<td><input type="radio" name="advancement"class="radiobtn"></td>
+					<td><input type="radio" name="advancement"class="radiobtn"></td>
+					<td><input type="radio" name="advancement"class="radiobtn"></td>
+					<td><input type="radio" name="advancement"class="radiobtn"></td>
+					<td><input type="radio" name="advancement"class="radiobtn"></td>
+				</tr>
+				</tbody>
+			</table><br><br>
+	            <p>Do you feel valued at work?</p><br>
+	            <input type="radio"><span> Yes</span>
+	            <input type="radio"><span> No</span><br><br>
+	             <p>Do you have the resources to perform this job well?</p><br>
+	            <input type="radio"><span> Yes</span>
+	            <input type="radio"><span> No</span><br><br>
+	             <p>Does your job cause you stress or anxiety?</p><br>
+	            <input type="radio"><span> Yes</span>
+	            <input type="radio"><span> No</span><br><br>
+	             <p>Are sufficient efforts being made to sollicit employees opinions and feedback?</p><br>
+	            <input type="radio"><span> Yes</span>
+	            <input type="radio"><span> No</span><br><br><br>
+	            <div class="feedback">
+	            	<label>Please provide any additional feedback</label><br><br>
+	            	<textarea name="feedback" id="" cols="68" rows="8"></textarea><br><br>
+	            </div>
+	            <hr><br>
+	            <div class="btn">
+	            	<button>Submit</button>
+	            </div>
+		</div>
+
+			</div>
+	</form>
+
+</body>
+</html>
